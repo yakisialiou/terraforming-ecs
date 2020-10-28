@@ -3,14 +3,6 @@
       "name": "redis",
       "image": "redis", 
       "essential": true,
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "options": {
-          "awslogs-region": "eu-west-1",
-          "awslogs-stream-prefix": "dummyapi-staging-service",
-          "awslogs-group": "awslogs-dummyapi-staging"
-        }
-      },
       "portMappings": [
         {
           "containerPort": 6379,
